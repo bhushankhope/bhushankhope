@@ -159,7 +159,7 @@ const ControlledAccordions = (props) => {
                   databases in conjunction with front-end data.
                 </p>
                 <p className="mb-2">
-                  Participated in 20+ sprint sessions as part of agile
+                  - Participated in 20+ sprint sessions as part of agile
                   methodology fostering a significant improvement in team
                   productivity.
                 </p>
