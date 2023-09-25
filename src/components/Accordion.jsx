@@ -52,7 +52,7 @@ const ControlledAccordions = (props) => {
                 Angular Developer @CNS Indiana University
               </Typography>
               <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
-                May 2022 - Aug. 2023
+                May 2022 - Sep. 2023
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
