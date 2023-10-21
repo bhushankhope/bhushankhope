@@ -34,8 +34,10 @@ import chirpchat from './chirpchat.png'
 import nile from './nile.png'
 import logobk from './logobk.png'
 import angular from './angular.png'
+import hra from './hra.png'
 
 export {
+  hra,
   angular,
   logobk,
   nile,

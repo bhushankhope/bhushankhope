@@ -1,15 +1,15 @@
-import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LinkIcon from "@mui/icons-material/Link";
-import { SectionWrapper } from "../hoc";
-import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
-import { styles } from "../styles";
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkIcon from '@mui/icons-material/Link';
+import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion';
+import { textVariant } from '../utils/motion';
+import { styles } from '../styles';
 
 // import '../css/accordion.css'
 
@@ -33,25 +33,25 @@ const ControlledAccordions = (props) => {
       <div className="w-full flex justify-center">
         <div style={{ maxWidth: 800 }}>
           <Accordion
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
+            expanded={expanded === 'panel1'}
+            onChange={handleChange('panel1')}
             sx={{
-              color: "white",
-              backgroundColor: "#2f154c",
+              color: 'white',
+              backgroundColor: '#2f154c',
               fontWeight: 500,
-              marginBottom: "0.5rem",
+              marginBottom: '0.5rem',
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+              expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
               className="custom-accordion-summary"
             >
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Angular Developer @CNS Indiana University
               </Typography>
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 May 2022 - Aug. 2023
               </Typography>
             </AccordionSummary>
@@ -59,12 +59,12 @@ const ControlledAccordions = (props) => {
               <Typography sx={{ fontWeight: 300 }} className="exp-cls">
                 <span className="loc-url-wrapper">
                   <span className="location">
-                    <LocationOnIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LocationOnIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     Bloomington, Indiana
                   </span>
                   <br />
                   <span className="url">
-                    <LinkIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LinkIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     <a
                       href="https://cns.iu.edu"
                       className="link"
@@ -106,24 +106,24 @@ const ControlledAccordions = (props) => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
+            expanded={expanded === 'panel2'}
+            onChange={handleChange('panel2')}
             sx={{
-              color: "white",
-              backgroundColor: "#2f154c",
-              marginBottom: "0.5rem",
+              color: 'white',
+              backgroundColor: '#2f154c',
+              marginBottom: '0.5rem',
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+              expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
               aria-controls="panel2bh-content"
               id="panel2bh-header"
               className="custom-accordion-summary"
             >
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Application Development Associate @Accenture
               </Typography>
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Dec. 2020 - Oct. 2021
               </Typography>
             </AccordionSummary>
@@ -131,12 +131,12 @@ const ControlledAccordions = (props) => {
               <Typography sx={{ fontWeight: 300 }} className="exp-cls">
                 <span className="loc-url-wrapper">
                   <span className="location">
-                    <LocationOnIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LocationOnIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     Pune, India
                   </span>
                   <br />
                   <span className="url">
-                    <LinkIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LinkIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     <a
                       href="https://www.accenture.com/in-en"
                       rel="noreferrer"
@@ -149,38 +149,44 @@ const ControlledAccordions = (props) => {
                   <br />
                 </span>
                 <p className="mb-2">
-                  - Remodeled a robust test automation framework and performed
-                  automated testing using Selenium, Robot Framework, and Python
-                  leading to a 40% decrease in testing time.
+                  - Crafted a responsive web application using React.js and
+                  JavaScript, leading to a 23% enhancement in user satisfaction.
                 </p>
                 <p className="mb-2">
-                  - Accomplished 100% discrepancy reduction by crafting SQL
-                  queries to extract, validate, and analyze data from relational
-                  databases in conjunction with front-end data.
+                  - Engineered 2 efficient and reusable functional components,
+                  resulting in an impressive 18% reduction in code redundancy.
                 </p>
                 <p className="mb-2">
-                  - Participated in 20+ sprint sessions as part of agile
-                  methodology fostering a significant improvement in team
-                  productivity.
+                  - Worked closely with UI/UX designers to translate design into
+                  code resulting in a 23% improvement in user satisfaction.
+                </p>
+                <p className="mb-2">
+                  - Formulated comprehensive unit tests employing Jest, yielding
+                  an outstanding 85% code coverage, ensuring the robustness and
+                  reliability of the code.
+                </p>
+                <p className="mb-2">
+                  - Participated in code reviews, 20+ sprint sessions as part of
+                  agile methodology fostering improvement in team productivity.
                 </p>
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
-            expanded={expanded === "panel3"}
-            onChange={handleChange("panel3")}
-            sx={{ color: "white", backgroundColor: "#2f154c" }}
+            expanded={expanded === 'panel3'}
+            onChange={handleChange('panel3')}
+            sx={{ color: 'white', backgroundColor: '#2f154c' }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+              expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
               aria-controls="panel3bh-content"
               id="panel3bh-header"
               className="custom-accordion-summary"
             >
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Test Engineer Intern @Globalstep Pvt Ltd
               </Typography>
-              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Jan 2019 - Jun. 2019
               </Typography>
             </AccordionSummary>
@@ -188,12 +194,12 @@ const ControlledAccordions = (props) => {
               <Typography sx={{ fontWeight: 300 }} className="exp-cls">
                 <span className="loc-url-wrapper">
                   <span className="location">
-                    <LocationOnIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LocationOnIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     Pune, India
                   </span>
                   <br />
                   <span className="url">
-                    <LinkIcon sx={{ fill: "#ff00ff" }} className="icon" />
+                    <LinkIcon sx={{ fill: '#ff00ff' }} className="icon" />
                     <a
                       href="https://globalstep.com/"
                       rel="noreferrer"
@@ -227,4 +233,4 @@ const ControlledAccordions = (props) => {
   );
 };
 
-export default SectionWrapper(ControlledAccordions, "work");
+export default SectionWrapper(ControlledAccordions, 'work');

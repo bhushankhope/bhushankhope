@@ -27,7 +27,8 @@ import {
   chirpchat,
   nile,
   logobk,
-  angular
+  angular,
+  hra
 } from "../assets";
 
 export const navLinks = [
@@ -202,6 +203,27 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Human Atlas",
+    description:
+      "A NSF Funded Biomedical Visualization application.",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hra,
+    source_code_link: "https://github.com/cns-iu/humanatlas.io",
+  },
   {
     name: "Foody",
     description:
