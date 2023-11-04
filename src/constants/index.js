@@ -223,6 +223,7 @@ const projects = [
     ],
     image: hra,
     source_code_link: "https://github.com/cns-iu/humanatlas.io",
+    live_link: 'https://humanatlas.io/'
   },
   {
     name: "Foody",
@@ -244,6 +245,7 @@ const projects = [
     ],
     image: foody,
     source_code_link: "https://github.com/bhushankhope/learn-react",
+    live_link: 'https://foody-bk.netlify.app/'
   },
   {
     name: "Chirp Chat",
@@ -265,6 +267,7 @@ const projects = [
     ],
     image: chirpchat,
     source_code_link: "https://github.com/bhushankhope/chirp-chat",
+    live_link: 'https://chirp-chat-cc.vercel.app/'
   },
   {
     name: "StreamCrew",

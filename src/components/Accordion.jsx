@@ -11,8 +11,6 @@ import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
 
-// import '../css/accordion.css'
-
 const ControlledAccordions = (props) => {
   const [expanded, setExpanded] = React.useState(false);
 
