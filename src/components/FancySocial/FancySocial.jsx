@@ -9,7 +9,7 @@ const FancySocial = ({ props }) => {
     >
       <a href={props.link} target="_blank" style={{ color: props.borderColor }} download>
         <img
-          src={`src/assets/tech/${props.filename}.svg`}
+          src={`tech/${props.filename}.svg`}
           style={{ fill: 'currentColor' }}
         ></img>
         <span className="label">

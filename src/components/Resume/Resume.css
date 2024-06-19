@@ -9,7 +9,7 @@
 }
 
 .top {
-  background: url('src/assets/header-bg.svg') no-repeat;
+  background: url('header-bg.svg') no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
