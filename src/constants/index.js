@@ -44,6 +44,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    route: 'resume',
+    title: 'Resume'
+  }
 ];
 
 const services = [
@@ -317,4 +321,84 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  {
+    bgc: '#F6F3FF',
+    borderColor: '#7C3AED',
+    filename: 'site',
+    label: 'bk.com',
+    link: 'https://www.bhushankhope.com',
+    reqd: true
+  },
+  {
+    bgc: '#F1F8FF',
+    filename: 'linkedin',
+    borderColor: '#0A66C2',
+    label: 'bhushankhope',
+    link: 'https://www.linkedin.com/in/bhushankhope/',
+    reqd: true
+  },
+  {
+    bgc: '#F6F3FF',
+    filename: 'github',
+    borderColor: '#222222',
+    label: 'bhushankhope',
+    link: 'https://github.com/bhushankhope',
+    reqd: true
+  }
+];
+
+const cnsSkills = ['Angular', 'Angular Material', 'Javascript', 'Typescript', 'Jest']
+
+const accentureSkills = ['React', 'Javascript', 'Jest', 'React Testing Library']
+
+const cnsExperience = [
+  'Led the development of a responsive user interface for an NSF-Funded biomedical visualization project, resulting in a 29% increase in user engagement.',
+  'Successfully designed and employed 12+ reusable and high-performance user interface components using Angular Material, resulting in a significant 18% reduction in development time while enhancing the overall user experience.',
+  'Successfully attained 93% code coverage for Angular components by using Jest.',
+  'Created Zod objects and employed the Zod-to-JSON library to facilitate YAML file validation through the exported JSON schema.',
+  'This resulted in a flawless 100% reduction in developmental errors, ensuring robust data validation.',
+  'Architected and managed a CI/CD pipeline that reduced software deployment times by 30% and increased project efficiency.'
+];
+
+const accentureExperience = [
+  'Crafted a responsive web application using React.js and JavaScript, leading to a 23% enhancement in user satisfaction.',
+  'Engineered 2 efficient and reusable functional components, resulting in an impressive 18% reduction in code redundancy.',
+  'Worked closely with UI/UX designers to translate design into code resulting in a 23% improvement in user satisfaction.',
+  'Formulated comprehensive unit tests employing Jest, yielding an outstanding 85% code coverage, ensuring the robustness and reliability of the code.',
+  'Participated in code reviews, 20+ sprint sessions as part of agile methodology fostering improvement in team productivity.'
+]
+
+const foodySkills = ['React', 'Javascript', 'Tailwind CSS', 'React-Redux'];
+
+const foodyPoints = [
+  'Engineered a React 18 based food delivery application, showcasing React fundamentals and Tailwind CSS for UI design.',
+  'Created over 10 components, custom hooks, higher-order components, and controlled components within project.',
+  'Used React Redux and Redux Toolkit to establish and manage the store and slices.'
+]
+
+const chirpChatSkills = ['React', 'NextJS', 'MongoDB', 'TypeScript', 'Tailwind CSS'];
+
+const chirpChatPoints = [
+  'Programmed ChirpChat, an innovative social media platform facilitating seamless user connection and collaborative content generation using NextJS.',
+  'Crafted 3 mongoose models to optimize data storage, establish schema relationships, and streamline data handling process.',
+  'Devised and integrated 15+ user data management functionalities, harnessing the power of MongoDB and Mongoose.'
+];
+
+const streamCrewSkills = ['Angular', 'Python', 'RabbitMQ', 'Redis']
+
+const streamCrewPoints = [
+  'Developed StreamCrew, an on-demand video streaming service that allows multiple users to stream videos together leveraging edge computing to provide a highly scalable, distributed architecture for the system.',
+  'Implemented 5+ REST and socket-based APIs using Python and FastAPI on the backend.',
+  'Established connections between client and server using WebSocket, used RabbitMQ to facilitate operations among multiple users and fetched and stored content in Redis cache to distribute it to users.',
+  'Encoded streaming content using DASH protocol on AWS Elemental MediaConvert and stored it in an AWS S3 bucket.'
+]
+
+const languages = ['Java', 'C#', 'Python', 'JavaScript (ES6+)', 'SQL', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'C++', 'Typescript']
+const frameworks = ['Angular', 'React', 'Spring-boot', 'Flask', 'Django', 'Angular Material', 'REST', 'Mongoose']
+const dbCloud = ['MySQL', 'PostgreSQL', 'MongoDB', 'AWS']
+const tools = ['Redux Toolkit', 'React-Redux', 'GIT', 'Docker', 'Jira']
+
+const iuCourses = ['Applied Algorithms', 'Applied Distributed Systems', 'Software Engineering', 'Database Design', 'Computer Networks'];
+const sppuCourses = ['Web Technology', 'Operating System', 'Object-Oriented Programming', 'Cloud Computing', 'Data Structures'];
+export { services, technologies, experiences, testimonials, projects, socials, cnsSkills, accentureSkills, cnsExperience, accentureExperience, foodySkills, foodyPoints, chirpChatSkills, chirpChatPoints, streamCrewSkills, streamCrewPoints, languages, frameworks, dbCloud, tools, iuCourses, sppuCourses };

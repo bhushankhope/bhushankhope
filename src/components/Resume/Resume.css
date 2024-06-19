@@ -1,0 +1,128 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: 76px;
+  background-color: black;
+}
+
+.top {
+  background: url('src/assets/header-bg.svg') no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #E2E8F0;
+}
+
+.role {
+  font-size: 1.25rem;
+  color: #CBD5E1;
+  line-height: 12px;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.location-email {
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.location-email>span {
+  width: fit-content;
+  color: #CBD5E1;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.icons {
+  font-size: inherit;
+}
+
+.bottom-wrapper {
+  background-color: #0F172A;
+}
+
+.bottom {
+  color: #E2E8F0;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.bottom>div {
+  border-bottom: solid #334155 0.5px;
+  width: calc(100% - 48rem);
+  padding-bottom: 1rem;
+}
+
+.bottom>div .right > div {
+  margin-bottom: 1rem;
+}
+
+.education,
+.experience,
+.projects,
+.skills {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
+}
+
+.experience, .projects, .skills {
+  padding-top: 1rem;
+}
+
+.education .right>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.skills .right div>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .right> div>div > span:first-child {
+  margin-bottom: 0.25rem;
+}
+
+.exp-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .right > div div:first-child, .skills .right > div div, .education .right div, .left {
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style: outside;
+}
+
+li::marker {
+  color: #CBD5E1;
+  font-size: 1rem;
+}

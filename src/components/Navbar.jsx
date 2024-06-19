@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import { close, logobk, menu } from "../assets";
 import { navLinks } from "../constants";
-import { logo, menu, close, logobk } from "../assets";
+import { styles } from "../styles";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
+      className={`navbar ${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
@@ -55,9 +55,11 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={
+                () => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.route ? <a href={`${nav.route}`} target='_blank'>{nav.title}</a> : <a href={`/#${nav.id}`}>{nav.title}</a>}
+              {/* <a href={`#${nav.id}`}>{nav.title}</a> */}
             </li>
           ))}
         </ul>

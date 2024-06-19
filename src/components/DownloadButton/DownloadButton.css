@@ -1,0 +1,24 @@
+.download-btn {
+  border-radius: 2rem;
+  border: solid 0.5px bisque;
+  background-color: #F6F3FF;
+  border: solid 0.5px #222222;
+}
+
+.download-btn > a {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+
+.texts {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 8px;
+}
+
+.download-btn img {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
