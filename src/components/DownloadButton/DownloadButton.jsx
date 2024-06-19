@@ -6,7 +6,7 @@ const DownloadButton = ({ props }) => {
     <button className="download-btn">
       <a href={props.link} download>
         <img
-          src={`src/assets/tech/${props.filename}.svg`}
+          src={`tech/${props.filename}.svg`}
           style={{ fill: 'currentColor' }}
         ></img>
         <span className="texts">Download Resume</span>
