@@ -28,7 +28,8 @@ import {
   nile,
   logobk,
   angular,
-  hra
+  hra,
+  postivitus
 } from "../assets";
 
 export const navLinks = [
@@ -319,6 +320,23 @@ const projects = [
     image: nile,
     source_code_link: "https://github.iu.edu/bkhope/CSCI-P565-Fall22-Nile",
   },
+  {
+    name: "Postivitus",
+    description: 'A user interface for a client',
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    live_link: 'https://bhushankhope.github.io/postivitus/',
+    source_code_link: 'https://github.com/bhushankhope/postivitus',
+    image: postivitus
+  }
 ];
 
 const socials = [

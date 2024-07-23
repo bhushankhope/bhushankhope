@@ -36,6 +36,8 @@ import logobk from './logobk.png'
 import angular from './angular.png'
 import hra from './hra.png'
 
+import postivitus from './postivitus.png'
+
 export {
   hra,
   angular,
@@ -71,4 +73,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  postivitus
 };
