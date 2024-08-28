@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ControlledAccordions } from "./components";
 import Resume from './components/Resume/Resume';
+import ReactGA from 'react-ga4';
 
 const App = () => {
+  ReactGA.initialize("G-87QTJW2LLT");
   return (
     <BrowserRouter>
       <MainContent />
