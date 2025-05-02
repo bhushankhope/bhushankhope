@@ -30,7 +30,7 @@ const ControlledAccordions = (props) => {
       </motion.div>
       <div className="w-full flex justify-center">
         <div style={{ maxWidth: 800 }}>
-          <Accordion
+        <Accordion
             expanded={expanded === 'panel1'}
             onChange={handleChange('panel1')}
             sx={{
@@ -47,10 +47,69 @@ const ControlledAccordions = (props) => {
               className="custom-accordion-summary"
             >
               <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
+                Frontend Engineer 1 @Amazon Web Services
+              </Typography>
+              <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
+                Nov 2024 - Present
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography sx={{ fontWeight: 300 }} className="exp-cls">
+                <span className="loc-url-wrapper">
+                  <span className="location">
+                    <LocationOnIcon sx={{ fill: '#ff00ff' }} className="icon" />
+                    Seattle, Washington
+                  </span>
+                  <br />
+                  <span className="url">
+                    <LinkIcon sx={{ fill: '#ff00ff' }} className="icon" />
+                    <a
+                      href="https://aws.amazon.com/"
+                      className="link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      aws.amazon.com
+                    </a>
+                  </span>
+                  <br />
+                </span>
+                <p className="mb-2">
+                  - Developed scalable RESTful APIs and AWS Lambda handlers to support backend service functionality.
+                </p>
+                <p className="mb-2">
+                  - Managed and provisioned AWS resources (e.g., Lambda, API Gateway, DynamoDB, S3) using AWS CDK with infrastructure as code (IaC) best practices.
+                </p>
+                <p className="mb-2">
+                  - Designed and architected cloud-native services leveraging AWS resources to ensure scalability, reliability, and cost-efficiency.
+                </p>
+                <p className="mb-2">
+                  - Implemented comprehensive unit and end-to-end (E2E) tests to validate business logic and verify full request-response workflows across services.
+                </p>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === 'panel2'}
+            onChange={handleChange('panel2')}
+            sx={{
+              color: 'white',
+              backgroundColor: '#2f154c',
+              fontWeight: 500,
+              marginBottom: '0.5rem',
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+              aria-controls="panel2bh-content"
+              id="panel2bh-header"
+              className="custom-accordion-summary"
+            >
+              <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
                 Angular Developer @CNS Indiana University
               </Typography>
               <Typography sx={{ fontFamily: "Poppins", fontWeight: 500 }}>
-                May 2022 - June. 2024
+                May 2022 - Nov. 2024
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -104,8 +163,8 @@ const ControlledAccordions = (props) => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            expanded={expanded === 'panel2'}
-            onChange={handleChange('panel2')}
+            expanded={expanded === 'panel3'}
+            onChange={handleChange('panel3')}
             sx={{
               color: 'white',
               backgroundColor: '#2f154c',
@@ -114,8 +173,8 @@ const ControlledAccordions = (props) => {
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
-              aria-controls="panel2bh-content"
-              id="panel2bh-header"
+              aria-controls="panel3bh-content"
+              id="panel3bh-header"
               className="custom-accordion-summary"
             >
               <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
@@ -170,15 +229,15 @@ const ControlledAccordions = (props) => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion
-            expanded={expanded === 'panel3'}
-            onChange={handleChange('panel3')}
+          {/* <Accordion
+            expanded={expanded === 'panel4'}
+            onChange={handleChange('panel4')}
             sx={{ color: 'white', backgroundColor: '#2f154c' }}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
-              aria-controls="panel3bh-content"
-              id="panel3bh-header"
+              aria-controls="panel4bh-content"
+              id="panel4bh-header"
               className="custom-accordion-summary"
             >
               <Typography sx={{ fontFamily: 'Poppins', fontWeight: 500 }}>
@@ -224,7 +283,7 @@ const ControlledAccordions = (props) => {
                 </p>
               </Typography>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
         </div>
       </div>
     </>
